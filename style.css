@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  
+}
+
+body {
+background-image: url("./ocean.jpg");
+background-attachment: fixed;
+background-position: center;  
+background-color: white;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+header {
+color: white;
+width: 100%;
+height: 90px;
+border-radius: 10px;
+max-width: 1000px;
+max-height: 1000px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+display:flex;
+justify-content:space-between;
+}
+header img {
+height: 120px;
+width: 120px;
+margin-left: 100px;
+background: rgba(255, 255, 255, 0.3);
+border-radius: 60%;
+}
+.keepTrack {
+background: rgba(222, 255, 255, 0.3);
+width: 30%;
+margin-right: 100px;
+margin-top: 30px;
+text-align: center;
+border-radius: 10px;
+}
+.keepTrack h4 {
+display: inline;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
+top: 10px;
+}
+
+main {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px; 
+background: rgba(222, 255, 255, 0.3);
+width: 90%;
+max-width: 1000px;
+max-height: 1000px;
+border-radius: 10px;
+}
+
+main p {
+color: white;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+max-width: 600px;
+text-shadow: 1px 1px 1px slategray;
+}
+
+h1, h2, h4 {
+color: white;
+text-transform: uppercase;
+text-shadow: 1px 1px 1px slategray;
+}
+h1, h2 {
+padding-top: 20px;
+padding-right: 5px;
+padding-left: 5px;
+}
+
+button {
+width: 200px;
+padding: 18px;
+border: none;
+border-radius: 10px;
+background-color: rgb(137, 204, 207);
+color: #ffffff;
+font-size: 18px;
+text-transform: uppercase;
+text-shadow: 1px 1px 1px slategray;
+cursor: pointer;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+button:hover{
+background-color: #363946;
+};
+
+.correctFeedback {
+margin-left: auto;
+margin-right: auto;
+width: 90%;
+max-height: 1000px;
+}
+.correctFeedback img{
+width: 75%;
+}
+
+.correctFeedback p {
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+padding-left: 5px;
+padding-right: 5px;
+font-size: 23px;
+color: white;
+text-shadow: 1px 1px 1px slategray;
+}
+
+.resultsCorrectFeedback p{
+font-size: 23px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+padding-left: 5px;
+padding-right: 5px;
+color: white;
+text-shadow: 1px 1px 1px slategray;
+}
+
+.resultsCorrectFeedback img {
+width: 75%;
+}
+
+.answerOption {
+display: flex;
+width: 100%;
+height: 75px;
+flex-direction: column;
+font-size: 20px;
+color: #ffffff; 
+border-radius: 10px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+cursor: pointer;
+}
+
+form span {
+width: 80%;
+height: 90px;
+border-radius: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+text-align:center;
+position: relative;
+bottom: 15px;
+background-color: rgb(64, 102, 104);
+}
+
+.answerOption img {
+position: absolute;
+left: 30px;
+bottom: 10px;
+visibility:hidden;
+}
+
+form span:hover {
+background-color:rgb(137, 204, 207);
+}
+
+form span:hover img {
+visibility: visible;
+}
+
+fieldset {
+border:none;
+}
+
+form input {
+opacity: 0;
+}
+input:checked ~ span{
+background-color: rgb(130, 216, 223);
+}
+
+input:focus {
+outline: 3px solid black;
+}
+
+/*FOR MOBILE*/
+@media screen and (max-width: 520px) {
+body {
+  background-image: url("./ocean.jpg");
+  background-attachment: fixed;
+  background-position: center;  
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.answerOption img {
+  position: absolute;
+  width: 40px;
+  left: 5px;
+  top: 5px;
+  bottom: 10px;
+  visibility:hidden;
+}
+.answerOption{
+  font-size: 15px;
+  width: 100%;
+}
+header img {
+  margin-left:10px;
+}
+.keepTrack {
+  width: 40%;
+  margin-right: 20px;
+}
+.correctFeedback img {
+  width: 98%;
+  border-radius: 10px;
+}
+.correctFeedback p {
+  font-size: 18px;
+}
+
+form span {
+  width: 100%;
+}
+
+.correctFeedback h2{
+  padding-top:10px;
+}
+.resultsCorrectFeedback p{
+  font-size: 15px;
+  color: white;
+  text-shadow: 1px 1px 1px slategray;
+}
+
+.resultsCorrectFeedback img {
+  width: 98%;
+  border-radius: 10px;
+}
+
+}
