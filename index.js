@@ -210,7 +210,7 @@ function userAnswerCorrect () {
 };
 
 function userAnswerWrong () {
-  $('.quizForm').html(`<div class="correctFeedback"><h2>You got it wrong</h2><img src="quiz-app-pictures/huge-manatee.jpg" width="600"><br><p>${STORE[questionNumber].comment}</span></p><button type=button class="nextButton">Next</button></div>`);
+  $('.quizForm').html(`<div class="correctFeedback"><h2>You got it wrong</h2><img src="quiz-app-pictures/huge-manatee.jpg" alt="The Hindenburg crash but it is replaced with a Manate with the text in front "Oh the huge manatee" width="600"><br><p>${STORE[questionNumber].comment}</span></p><button type=button class="nextButton">Next</button></div>`);
 };
 
 function updateScore () {
