@@ -90,7 +90,7 @@ const STORE = [
      'Carnivore (eats only meat)',
      'Herbivore (eats only plants)',
      'Omnivore (eats both meat & plants)',
-     'Scavenger(eats dead animals or plants)'
+     'Scavenger (eats dead animals or plants)'
    ],
    correctAnswer: 'Herbivore (eats only plants)',
    comment: 'Manatees graze on sea plants and grasses with their flat teeth, which are just perfect for being a herbivore!',
@@ -243,11 +243,11 @@ function restartQuiz () {
 
 function renderResults() {
     if (score >=8) {
-      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Manatee Master!</h2><img src="quiz-app-pictures/manateemaster.png" alt="Adopt a Manatee information" width="400"/><p>You got ${score} / 10</p><p>Let's go educate more people to save the manatees! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`);
+      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Manatee Master!</h2><img src="quiz-app-pictures/manateemaster.png" alt="Adopt a Manatee information" width="400"/><p>You got ${score} / 10</p><p>Let's go educate more people to save the manatees!<br> You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`);
     } else if (score < 8 && score >=5) {
-      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Manatee Novice!</h2><img src="quiz-app-pictures/hug-manatee.jpg" alt="Manatee saying "I'd hug you if I had arms""/><p>You got ${score} / 10</p><p>You know quite a lot about manatees but there is still so much to learn! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`)
+      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Manatee Novice!</h2><img src="quiz-app-pictures/hug-manatee.jpg" alt="Manatee saying "I'd hug you if I had arms""/><p>You got ${score} / 10</p><p>You know quite a lot about manatees but there is still so much to learn! <br>You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`)
     } else {
-      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Baby Manatee!</h2><img src="quiz-app-pictures/baby-manatee-img.png" alt="Two manatees saying "It's okay, we still love you""/><p>You got ${score} / 10</p><p>There is still much for you to learn, but we hope you learned something new from this quiz about manatees! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`)
+      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Baby Manatee!</h2><img src="quiz-app-pictures/baby-manatee-img.png" alt="Two manatees saying "It's okay, we still love you""/><p>You got ${score} / 10</p><p>There is still much for you to learn, but we hope you learned something new from this quiz about manatees! <br>You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`)
     }
     console.log('renderResults ran')
 };
