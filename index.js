@@ -9,7 +9,7 @@ const STORE = [
    ],
    correctAnswer: 'Vulnerable',
    comment: 'All species of manatee are classified as vulnerable. However, in Florida, USA they are classified as endangered.',
-   answerImg: '<img class="answerimg" src="./quiz-app-pictures/manatee1.jpeg" alt="Manatee floating in a lagoon" width="500" >'
+   answerImg: '<img class="answerimg" src="quiz-app-pictures/manatee1.jpeg" alt="Manatee floating in a lagoon" width="500" >'
  },
  {
    question: 'How big do manatees grow?',
@@ -22,7 +22,7 @@ const STORE = [
    ],
    correctAnswer: '400kg - 550kg (880lbs - 1200lbs)',
    comment: 'They can be from 400 - 550 kg of loveable chubby mermaid! However, babies are an adorable 30kg.',
-   answerImg: '<img class="answerimg" src="./quiz-app-pictures/baby-manatee.jpg" "A baby manatee being exaimed gently by a carer" width="500">'
+   answerImg: '<img class="answerimg" src="quiz-app-pictures/baby-manatee.jpg" "A baby manatee being exaimed gently by a carer" width="500">'
  },
  {
    question: 'How old do manatees live to be in the wild?',
@@ -34,7 +34,7 @@ const STORE = [
    ],
    correctAnswer: '40 - 50 years old',
    comment: 'Manatees usually live about 40 - 50 years in the wild. However, the oldest manatee, Snooty, lived to be a whopping 69 years old (he was bred in captivity)',
-   answerImg: '<img src="./quiz-app-pictures/snooty.jpg" alt="Snooty the manatee facing the camera" width="500">'
+   answerImg: '<img src="quiz-app-pictures/snooty.jpg" alt="Snooty the manatee facing the camera" width="500">'
  },
  {
    question: 'What is the common nickname for manatees?',
@@ -46,7 +46,7 @@ const STORE = [
    ],
    correctAnswer: 'Sea cow',
    comment: 'Their common nickname is \'sea cow\'. Just living the laid back life, doing the best they can do.',
-   answerImg: '<img src="./quiz-app-pictures/couple-manatee.jpg" alt="Two manatees eating together underwater" width="500">'
+   answerImg: '<img src="quiz-app-pictures/couple-manatee.jpg" alt="Two manatees eating together underwater" width="500">'
  },
  {
    question: 'Which are the biggest threat to manatees?',
@@ -58,7 +58,7 @@ const STORE = [
    ],
    correctAnswer: 'Humans',
    comment: 'Manatees have no predators but boats and human expansion are the top threats to them.',
-   answerImg: '<img src="./quiz-app-pictures/owie-manatee.jpg" alt="Manatee with scars on back from boats" width="500">'
+   answerImg: '<img src="quiz-app-pictures/owie-manatee.jpg" alt="Manatee with scars on back from boats" width="500">'
  },
  {
    question: 'Who are manatees most closely related?',
@@ -70,7 +70,7 @@ const STORE = [
    ],
    correctAnswer: 'Elephants',
    comment: 'You\'d think that they would be related to some other marine life, but they actually descend from a common ancestor of elephant!',
-   answerImg: '<img src="./quiz-app-pictures/manatee-elephant.jpg" alt="Manatee and Elephant side by side comparison" width="500">'
+   answerImg: '<img src="quiz-app-pictures/manatee-elephant.jpg" alt="Manatee and Elephant side by side comparison" width="500">'
  },
  {
    question: 'How many species of manatee are there, currently?',
@@ -82,7 +82,7 @@ const STORE = [
    ],
    correctAnswer: 'Three',
    comment: 'There are three accepted species of the manatee: the Amazonian manatee, the West Indian manatee, and the West African manatee.',
-   answerImg: '<img src="./quiz-app-pictures/manate-species.png" alt="The three manatee species" width="700">'
+   answerImg: '<img src="quiz-app-pictures/manate-species.png" alt="The three manatee species" width="700">'
  },
  {
    question: ' What are manatees in regards to diet?',
@@ -94,7 +94,7 @@ const STORE = [
    ],
    correctAnswer: 'Herbivore (eats only plants)',
    comment: 'Manatees graze on sea plants and grasses with their flat teeth, which are just perfect for being a herbivore!',
-   answerImg: '<img src="./quiz-app-pictures/manatee-eating.jpg" alt="Manatee eating sea grass" width="500">'
+   answerImg: '<img src="quiz-app-pictures/manatee-eating.jpg" alt="Manatee eating sea grass" width="500">'
  },
  {
    question: 'When is \'Manatee Appreciation Day\'?',
@@ -106,7 +106,7 @@ const STORE = [
    ],
    correctAnswer: 'The last Wednesday in March',
    comment: 'It is the last Wednesday in March, every year! Mark your calendars!',
-   answerImg: '<img src="./quiz-app-pictures/manatee-day.jpg" alt="Manatee Appreciation Day" width="500">'
+   answerImg: '<img src="quiz-app-pictures/manatee-day.jpg" alt="Manatee Appreciation Day" width="500">'
  },
  {
    question: 'Aren\'t manatees just the cutest?',
@@ -118,7 +118,7 @@ const STORE = [
    ],
    correctAnswer: null,
    comment: 'I thought so too!',
-   answerImg: '<img src="./quiz-app-pictures/manatee-boop.gif" alt="Manatee boops the aquarium glass" width="500">'
+   answerImg: '<img src="quiz-app-pictures/manatee-boop.gif" alt="Manatee boops the aquarium glass" width="500">'
   }
 ];
 
@@ -134,19 +134,19 @@ function generateQuestion () {
     <fieldset>
     <label class="answerOption">
     <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
-    <span><img class="manateeIcon" src="./quiz-app-pictures/manatee-icon.jpg" alt="Cartoon Manatee Icon" width="50">${STORE[questionNumber].answers[0]}</span>
+    <span><img class="manateeIcon" src="quiz-app-pictures/manatee-icon.jpg" alt="Cartoon Manatee Icon" width="50">${STORE[questionNumber].answers[0]}</span>
     </label>
     <label class="answerOption">
     <input type="radio" value="${STORE[questionNumber].answers[1]}" name="answer" required>
-    <span><img class="manateeIcon" src="./quiz-app-pictures/manatee-icon.jpg" alt="Cartoon Manatee Icon" width="50">${STORE[questionNumber].answers[1]}</span>
+    <span><img class="manateeIcon" src="quiz-app-pictures/manatee-icon.jpg" alt="Cartoon Manatee Icon" width="50">${STORE[questionNumber].answers[1]}</span>
     </label>
     <label class="answerOption">
     <input type="radio" value="${STORE[questionNumber].answers[2]}" name="answer" required>
-    <span><img class="manateeIcon" alt="Cartoon Manatee Icon" src="./quiz-app-pictures/manatee-icon.jpg" width="50">${STORE[questionNumber].answers[2]}</span>
+    <span><img class="manateeIcon" alt="Cartoon Manatee Icon" src="quiz-app-pictures/manatee-icon.jpg" width="50">${STORE[questionNumber].answers[2]}</span>
     </label>
     <label class="answerOption">
     <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
-    <span><img class="manateeIcon" alt="Cartoon Manatee Icon" src="./quiz-app-pictures/manatee-icon.jpg" width="50">${STORE[questionNumber].answers[3]}</span>
+    <span><img class="manateeIcon" alt="Cartoon Manatee Icon" src="quiz-app-pictures/manatee-icon.jpg" width="50">${STORE[questionNumber].answers[3]}</span>
     </label>
     <button type="submit" class="submitButton">Submit</button>
     </fieldset>
@@ -216,7 +216,7 @@ function userAnswerCorrect () {
 };
 
 function userAnswerWrong () {
-  $('.quizForm').html(`<div class="correctFeedback"><h2>You got it wrong</h2><img src="./quiz-app-pictures/huge-manatee.jpg" width="600"><br><p>${STORE[questionNumber].comment}</span></p><button type=button class="nextButton">Next</button></div>`);
+  $('.quizForm').html(`<div class="correctFeedback"><h2>You got it wrong</h2><img src="quiz-app-pictures/huge-manatee.jpg" width="600"><br><p>${STORE[questionNumber].comment}</span></p><button type=button class="nextButton">Next</button></div>`);
 };
 
 function updateScore () {
@@ -243,11 +243,11 @@ function restartQuiz () {
 
 function renderResults() {
     if (score >=8) {
-      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Manatee Master!</h2><img src="./quiz-app-pictures/manateemaster.png" alt="Adopt a Manatee information" width="400"/><p>You got ${score} / 10</p><p>Let's go educate more people to save the manatees! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`);
+      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Manatee Master!</h2><img src="quiz-app-pictures/manateemaster.png" alt="Adopt a Manatee information" width="400"/><p>You got ${score} / 10</p><p>Let's go educate more people to save the manatees! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`);
     } else if (score < 8 && score >=5) {
-      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Manatee Novice!</h2><img src="./quiz-app-pictures/hug-manatee.jpg" alt="Manatee saying "I'd hug you if I had arms""/><p>You got ${score} / 10</p><p>You know quite a lot about manatees but there is still so much to learn! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`)
+      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Manatee Novice!</h2><img src="quiz-app-pictures/hug-manatee.jpg" alt="Manatee saying "I'd hug you if I had arms""/><p>You got ${score} / 10</p><p>You know quite a lot about manatees but there is still so much to learn! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`)
     } else {
-      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Baby Manatee!</h2><img src="./quiz-app-pictures/baby-manatee-img.png" alt="Two manatees saying "It's okay, we still love you""/><p>You got ${score} / 10</p><p>There is still much for you to learn, but we hope you learned something new from this quiz about manatees! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`)
+      $('.quizForm').html(`<div class="resultsCorrectFeedback"><h2>You're a Baby Manatee!</h2><img src="quiz-app-pictures/baby-manatee-img.png" alt="Two manatees saying "It's okay, we still love you""/><p>You got ${score} / 10</p><p>There is still much for you to learn, but we hope you learned something new from this quiz about manatees! You get a new picture of a manatee if you get a correct answer, so let's try again!</p><button class="restartButton">Restart Quiz</button></div>`)
     }
     console.log('renderResults ran')
 };
