@@ -116,7 +116,7 @@ const STORE = [
      'Who would think otherwise?',
      'I just want to hug one!'
    ],
-   correctAnswer: null,
+   correctAnswer: true,
    comment: 'I thought so too!',
    answerImg: '<img src="quiz-app-pictures/manatee-boop.gif" alt="Manatee boops the aquarium glass" width="500">'
   }
@@ -127,8 +127,7 @@ let questionNumber = 0;
 
 
 function generateQuestion () {
-  if (questionNumber < STORE.length) {
-    return `<div class="question-${questionNumber}">
+      return `<div class="question-${questionNumber}">
     <h2>${STORE[questionNumber].question}</h2>
     <form>
     <fieldset>
@@ -152,7 +151,6 @@ function generateQuestion () {
     </fieldset>
     </form>
     </div>`;
-  }
 };
 
 function changeQuestionNumber () {
