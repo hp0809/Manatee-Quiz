@@ -2,7 +2,7 @@
 
 A simple quiz app about the majestic manatee!
 
-## Sreenshots
+## Screenshots
 
 Question Example
 
