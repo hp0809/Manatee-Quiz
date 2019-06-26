@@ -6,7 +6,7 @@ A simple quiz app about the majestic manatee!
 
 Question Example
 
-![](app-screenshots/manatee-app-question-example.png)
+![](app-screenshots/manatee-quiz-question-example.png)
 
 Answer Example
 
